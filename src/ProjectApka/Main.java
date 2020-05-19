@@ -11,5 +11,8 @@ public class Main {
         System.out.println("co slychac?");
 
 
+        System.out.println("Psotka");
+
+
     }
 }
