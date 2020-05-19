@@ -6,6 +6,7 @@ public class Main {
         System.out.println("hello Grześ");
         System.out.println("hello Rafciu");
         System.out.println("hello Grześ, Cobra");
+        System.out.println("co slychac?");
 
     }
 }
