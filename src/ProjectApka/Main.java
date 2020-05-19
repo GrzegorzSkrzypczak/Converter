@@ -7,6 +7,7 @@ public class Main {
         System.out.println("hello Rafciu");
         System.out.println("hello Grześ, Cobra");
         System.out.println("co slychac?");
+        System.out.println("nic ciekawego, syf i dolina :D");
 
     }
 }
