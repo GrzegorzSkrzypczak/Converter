@@ -5,4 +5,5 @@ public class Mass {
     double kg;
     double pounds;
     double uncja;
+
 }
