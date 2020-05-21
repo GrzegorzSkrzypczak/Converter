@@ -6,38 +6,37 @@ public class Temperature {
     double fahrenheit;
 
 
-    double celsiusToKelwin(double celsius) {
+    void celsiusToKelwin(double celsius) {
         this.celsius = celsius;
-        return celsius += 273.15;
+        System.out.format("%.2f%n", celsius + 273.15);
 
     }
 
-    double celsiusToFahrenheit(double celsius) {
+    void celsiusToFahrenheit(double celsius) {
         this.celsius = celsius;
-        return celsius = (celsius * 1.8) + 32;
+        System.out.format("%.2f%n", (celsius * 1.8) + 32);
 
     }
 
-    double kelwinToCelsius(double kelwin) {
+    void kelwinToCelsius(double kelwin) {
         this.kelwin = kelwin;
-        return kelwin -= 273.15;
-
+        System.out.format("%.2f%n", kelwin - 273.15);
     }
 
-    double kelwinToFahrenheit(double kelwin) {
+    void kelwinToFahrenheit(double kelwin) {
         this.kelwin = kelwin;
-        return kelwin = (kelwin - 273.15) * 1.8 + 32;
-
+        System.out.format("%.2f%n", (kelwin - 273.15) * 1.8 + 32);
     }
 
-    double fahrenheitToCelsius(double fahrenheit) {
+    void fahrenheitToCelsius(double fahrenheit) {
         this.fahrenheit = fahrenheit;
-        return fahrenheit = (fahrenheit - 32) / 1.8;
+        System.out.format("%.2f%n", (fahrenheit - 32) / 1.8);
     }
 
-    public double fahrenheitToKelwin(double fahrenheit) {
+    void  fahrenheitToKelwin(double fahrenheit) {
         this.fahrenheit = fahrenheit;
-        return fahrenheit = (fahrenheit - 32) / 1.8 + 273.15;
+        System.out.format("%.2f%n", (fahrenheit - 32) / 1.8 + 273.15);
+
     }
 }
 

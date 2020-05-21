@@ -6,12 +6,27 @@ public class Main {
 
         System.out.println("Temperature: ");
         Temperature temp = new Temperature();
-        System.out.println(temp.celsiusToKelwin(10));
-        System.out.println(temp.celsiusToFahrenheit(10));
-        System.out.println(temp.kelwinToFahrenheit(10));
-        System.out.println(temp.kelwinToCelsius(283.15));
-        System.out.println(temp.fahrenheitToCelsius(50));
-        System.out.println(temp.fahrenheitToKelwin(-441.70));
+        Metrics metrics = new Metrics();
+
+double tempToCalc = 1;
+
+        System.out.println("Temperature");
+        temp.celsiusToKelwin(tempToCalc);
+        temp.celsiusToFahrenheit(tempToCalc);
+        temp.kelwinToFahrenheit(tempToCalc);
+        temp.kelwinToCelsius(tempToCalc);
+        temp.fahrenheitToCelsius(tempToCalc);
+        temp.fahrenheitToKelwin(tempToCalc);
+
+        System.out.println("Metrics");
+
+        metrics.footToMetr(tempToCalc);
+        metrics.footToYard(tempToCalc);
+        metrics.footToLandMile(tempToCalc);
+        metrics.metrToSeaMile(tempToCalc);
+        metrics.footToSeaMile(tempToCalc);
+        metrics.metrToFoot(tempToCalc);
+
 
         System.out.println();
         System.out.println("Mass: ");
