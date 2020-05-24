@@ -7,7 +7,7 @@ public class Main {
         Metrics metrics = new Metrics();
         Mass mass = new Mass();
 
-double tempToCalc = 1;
+double tempToCalc = 2;
 
         System.out.println("Temperature");
         System.out.println("____________________________________");
@@ -23,12 +23,18 @@ double tempToCalc = 1;
         System.out.println("Metrics");
         System.out.println("____________________________________");
 
-        metrics.footToMetr(tempToCalc);
-        metrics.footToYard(tempToCalc);
-        metrics.footToLandMile(tempToCalc);
+        metrics.feetToMetr(tempToCalc);
+        metrics.feetToYard(tempToCalc);
+        metrics.feetToLandMile(tempToCalc);
         metrics.metrToSeaMile(tempToCalc);
-        metrics.footToSeaMile(tempToCalc);
-        metrics.metrToFoot(tempToCalc);
+        metrics.feetToSeaMile(tempToCalc);
+        metrics.metrToFeet(tempToCalc);
+        metrics.metrToLandMile(tempToCalc);
+        metrics.metrToYard(tempToCalc);
+        metrics.yardToLandMile(tempToCalc);
+        metrics.LandMileToSeaMile(tempToCalc);
+        metrics.seaMileToFeet(tempToCalc);
+            System.out.println("Nie wszystko dodane do wydruku sprawdzajacego");
 
 
         System.out.println();
