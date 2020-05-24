@@ -8,6 +8,8 @@ public class Menu {
 
         Scanner scanner = new Scanner(System.in);
         printOptions();
+        wyborOpcji(scanner.nextInt());
+
 
     }
 
@@ -28,13 +30,39 @@ public class Menu {
         TEMPERATURE(3, "Przeliczenie temperatury."),
         EXIT(4, "Wyjście.");
 
-        private int optionNumber;
-        private String desciprion;
+        public int optionNumber;
+        public String desciprion;
+
+        public int getOptionNumber() {
+            return optionNumber;
+        }
 
         Opcje(int optionNumber, String desciprion) {
             this.optionNumber = optionNumber;
             this.desciprion = desciprion;
+
+
+        }
+    }
+
+
+    public static void wyborOpcji(int opcja) {
+
+        switch (opcja) {
+            case 1:
+                System.out.println("wybrałeś 1");
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            default:
+                System.out.println("Podałeś złą opcję");
         }
     }
 }
+
+
 
