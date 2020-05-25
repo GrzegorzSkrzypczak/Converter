@@ -1,13 +1,17 @@
 package ProjectApka;
+
 import java.util.Scanner;
 
+
 public class Menu {
+
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
 
 
-        Scanner scanner = new Scanner(System.in);
-        printOptions();
-        wyborOpcji(scanner.nextInt());
+        scanner = new Scanner(System.in);
+        wyborOpcji();
 
 
     }
@@ -32,33 +36,41 @@ public class Menu {
         public int optionNumber;
         public String desciprion;
 
-        public int getOptionNumber() {
-            return optionNumber;
-        }
 
         Opcje(int optionNumber, String desciprion) {
             this.optionNumber = optionNumber;
             this.desciprion = desciprion;
 
-
         }
     }
 
 
-    public static void wyborOpcji(int opcja) {
+    public static void wyborOpcji() {
 
-        switch (opcja) {
-            case 1:
-                System.out.println("wybrałeś 1");
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
-            default:
-                System.out.println("Podałeś złą opcję");
+        try {
+            boolean isFinished = false;
+            while (!isFinished) {
+                printOptions();
+                int operation = Integer.parseInt(scanner.nextLine());
+                switch (operation) {
+                    case 1:
+                        System.out.println("MASS");
+                        break;
+                    case 2:
+                        System.out.println("METRICS");
+                        break;
+                    case 3:
+                        System.out.println("TEMPERATURE");
+                        break;
+                    case 4:
+                        isFinished = true;
+                        System.out.println("Koniec programu");
+                        break;
+
+                }
+            }
+        } catch (NumberFormatException e) {
+            System.err.println("Podałeś złą wartość! Spróbuj ponownie.");
         }
     }
 }
