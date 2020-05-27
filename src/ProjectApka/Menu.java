@@ -48,6 +48,7 @@ public class Menu {
     public static void wyborOpcji() {
 
         Mass mass = new Mass();
+        Metrics metrics = new Metrics ();
 
         try {
             boolean isFinished = false;
@@ -59,7 +60,7 @@ public class Menu {
                         mass.wyborMasy();
                         break;
                     case 2:
-                        System.out.println("METRICS");
+                        metrics.wyborMetrics ();
                         break;
                     case 3:
                         System.out.println("TEMPERATURE");

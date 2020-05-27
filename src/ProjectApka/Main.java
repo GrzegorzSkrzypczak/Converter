@@ -32,7 +32,7 @@ double tempToCalc = 2;
         metrics.metrToLandMile(tempToCalc);
         metrics.metrToYard(tempToCalc);
         metrics.yardToLandMile(tempToCalc);
-        metrics.LandMileToSeaMile(tempToCalc);
+        metrics.landMileToSeaMile (tempToCalc);
         metrics.seaMileToFeet(tempToCalc);
             System.out.println("Nie wszystko dodane do wydruku sprawdzajacego");
 

@@ -56,8 +56,9 @@ public class Mass {
 
         boolean isFinished = false;
         while (!isFinished) {
-            int operation = Integer.parseInt(scanner.nextLine());
+            int operation = scanner.nextInt ();
             switch (operation) {
+
                 case 1:
                     System.out.println("Podaj wartość (kilogramy na funty): ");
                     kilogramToPunds(scanner.nextDouble());
