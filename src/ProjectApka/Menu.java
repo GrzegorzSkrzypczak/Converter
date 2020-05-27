@@ -47,6 +47,8 @@ public class Menu {
 
     public static void wyborOpcji() {
 
+        Mass mass = new Mass();
+
         try {
             boolean isFinished = false;
             while (!isFinished) {
@@ -54,7 +56,7 @@ public class Menu {
                 int operation = Integer.parseInt(scanner.nextLine());
                 switch (operation) {
                     case 1:
-                        System.out.println("MASS");
+                        mass.wyborMasy();
                         break;
                     case 2:
                         System.out.println("METRICS");
