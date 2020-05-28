@@ -2,6 +2,7 @@ package ProjectApka.viewController;
 
 import ProjectApka.Mass;
 import ProjectApka.Metrics;
+import ProjectApka.Temperature;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -49,6 +50,7 @@ public class ConsoleDataView implements Runnable {
 
         Mass mass = new Mass();
         Metrics metrics = new Metrics ();
+        Temperature temp = new Temperature();
 
         try {
             boolean isFinished = false;
@@ -64,7 +66,7 @@ public class ConsoleDataView implements Runnable {
                         metrics.wyborMetrics ();
                         break;
                     case 3:
-                        System.out.println("TEMPERATURE");
+                        temp.wyborTemp();
                         break;
                     case 4:
                         isFinished = true;
