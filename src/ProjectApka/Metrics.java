@@ -136,6 +136,7 @@ public class Metrics {
         System.out.println ("18. Mile morskie na metry: ");
         System.out.println ("19. Mile morskie na yardy: ");
         System.out.println ("20. Mile morskie na mile lądowe: ");
+        System.out.println ("21. Cofnij... ");
 
 
         boolean isFinished = false;
@@ -226,6 +227,8 @@ public class Metrics {
                     isFinished = true;
                     System.out.println ("Koniec programu");
                     break;
+
+
             }
 
         }

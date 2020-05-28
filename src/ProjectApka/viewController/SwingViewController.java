@@ -1,4 +1,4 @@
 package ProjectApka.viewController;
 
-public class consoleViewController {
+public class SwingViewController {
 }

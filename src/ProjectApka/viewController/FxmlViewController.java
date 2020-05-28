@@ -1,4 +1,4 @@
 package ProjectApka.viewController;
 
-public class fxmlViewController {
+public class FxmlViewController {
 }
