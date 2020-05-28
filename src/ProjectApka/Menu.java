@@ -1,18 +1,23 @@
 package ProjectApka;
 
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
 import java.util.Scanner;
 
 
-public class Menu {
+public class Menu extends Application {
 
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-
-        scanner = new Scanner(System.in);
-        wyborOpcji();
-
+//        scanner = new Scanner(System.in);
+//        wyborOpcji();
+launch (args);
 
     }
 
@@ -23,6 +28,18 @@ public class Menu {
                     + ": " + option
                     + " - " + option.desciprion);
         }
+    }
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        VBox calcPane = FXMLLoader.load (getClass ().getResource ("fxml/CalcPane.fxml"));
+        Scene scene = new Scene (calcPane);
+        stage.setScene (scene);
+        stage.setTitle ("Przelicznik");
+        stage.show ();
+        stage.setAlwaysOnTop (true);
+        stage.setResizable (true);
+
     }
 
 

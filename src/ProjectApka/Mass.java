@@ -46,13 +46,13 @@ public class Mass {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Wybierz swój przelicznik: ");
-        System.out.println("1: Kilogramy na funty: ");
-        System.out.println("2: Kilogramy na uncje: ");
-        System.out.println("3: Funty na kilogramy: ");
-        System.out.println("4: Funty na uncje: ");
-        System.out.println("5: Uncje na kilogramy: ");
-        System.out.println("6: Uncje na funty: ");
-        System.out.println("7: Wyjście: ");
+        System.out.println("1. Kilogramy na funty: ");
+        System.out.println("2. Kilogramy na uncje: ");
+        System.out.println("3. Funty na kilogramy: ");
+        System.out.println("4. Funty na uncje: ");
+        System.out.println("5. Uncje na kilogramy: ");
+        System.out.println("6. Uncje na funty: ");
+        System.out.println("7. Wyjście: ");
 
         boolean isFinished = false;
         while (!isFinished) {
