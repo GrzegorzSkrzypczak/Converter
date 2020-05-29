@@ -8,16 +8,15 @@ public class Mass {
     double pounds;
     double uncja;
 
-    void kilogramToPunds(double kilograms) {
+   public double kilogramToPunds(double kilograms) {
         this.kg = kilograms;
-        double result = kilograms * 2.2046;
-        System.out.format("%.2f%n", result);
-
+       return kilograms * 2.2046;
     }
 
-    void kilogramToUncja(double kilograms) {
+
+    public double kilogramToUncja(double kilograms) {
         this.kg = kilograms;
-        System.out.format("%.2f%n", kilograms * 35.274);
+        return kilograms * 35.274;
     }
 
     void poundsToKilograms(double pounds) {
