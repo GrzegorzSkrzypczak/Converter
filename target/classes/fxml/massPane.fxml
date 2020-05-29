@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+
+
+<Button fx:id="massButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="80.0" prefWidth="300.0" text="data.Mass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" />
