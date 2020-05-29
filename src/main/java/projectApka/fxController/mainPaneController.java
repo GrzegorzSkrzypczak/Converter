@@ -29,7 +29,6 @@ public class mainPaneController {
             public void handle(ActionEvent actionEvent) {
                 Stage stage = (Stage) exitButton.getScene ().getWindow ();
 
-                Stage massStage = new Stage ();
                 try {
                 VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/massPane.fxml"));
                 Scene scene = new Scene (mainPane);
@@ -47,7 +46,7 @@ public class mainPaneController {
             }
         });
 
-
+///////////////////////////////////////////////////////////////////////////////////
 
         exitButton.setOnAction (new EventHandler<ActionEvent> () {
             @Override

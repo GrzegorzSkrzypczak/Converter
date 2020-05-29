@@ -25,7 +25,7 @@ public class giveNumberKgToPoundsPaneController {
     @FXML
     private Button backButton;
 
-                Mass mass = new Mass();
+    Mass mass = new Mass ();
 
     public void initialize() throws Exception {
 
@@ -34,26 +34,20 @@ public class giveNumberKgToPoundsPaneController {
             @Override
             public void handle(ActionEvent actionEvent) {
 
-                double value =Double.parseDouble (textAreaButton.getText ());
-                String stringValue =String.valueOf (mass.kilogramToPunds (value));
+                double value = Double.parseDouble (textAreaButton.getText ());
+                String stringValue = String.valueOf (mass.kilogramToPunds (value));
                 textAreaButton.setText (stringValue);
 
             }
         });
 
-
-
-
-
-
+///////////////////////////////////////////////////////////////////////////////////
 
         backButton.setOnAction (new EventHandler<ActionEvent> () {
             @Override
             public void handle(ActionEvent actionEvent) {
 
                 Stage stage = (Stage) backButton.getScene ().getWindow ();
-
-                Stage massStage = new Stage ();
 
 
                 try {
@@ -68,7 +62,6 @@ public class giveNumberKgToPoundsPaneController {
                 } catch (IOException e) {
                     e.printStackTrace ();
                 }
-
             }
         });
     }

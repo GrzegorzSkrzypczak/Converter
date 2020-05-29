@@ -25,7 +25,8 @@ public class giveNumberPaneKgToUncjaController {
     @FXML
     private Button backButton;
 
-                Mass mass = new Mass();
+    Mass mass = new Mass ();
+
 
     public void initialize() throws Exception {
 
@@ -34,18 +35,14 @@ public class giveNumberPaneKgToUncjaController {
             @Override
             public void handle(ActionEvent actionEvent) {
 
-                double value =Double.parseDouble (textAreaButton.getText ());
-                String stringValue =String.valueOf (mass.kilogramToUncja (value));
+                double value = Double.parseDouble (textAreaButton.getText ());
+                String stringValue = String.valueOf (mass.kilogramToUncja (value));
                 textAreaButton.setText (stringValue);
 
             }
         });
 
-
-
-
-
-
+///////////////////////////////////////////////////////////////////////////////////
 
         backButton.setOnAction (new EventHandler<ActionEvent> () {
             @Override

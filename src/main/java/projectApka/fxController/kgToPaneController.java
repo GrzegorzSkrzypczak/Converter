@@ -31,9 +31,6 @@ public class kgToPaneController {
 
                 Stage stage = (Stage) toUncjaButton.getScene ().getWindow ();
 
-                Stage massStage = new Stage ();
-
-
                 try {
                     VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/giveNumberKgToUncjaPane.fxml"));
                     Scene scene = new Scene (mainPane);
@@ -58,11 +55,8 @@ public class kgToPaneController {
 
                 Stage stage = (Stage) toPoundsButton.getScene ().getWindow ();
 
-                Stage massStage = new Stage ();
-
-
                 try {
-                   VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/giveNumberKgToPundsPane.fxml"));
+                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/giveNumberKgToPundsPane.fxml"));
                     Scene scene = new Scene (mainPane);
 
                     stage.setScene (scene);
@@ -85,11 +79,9 @@ public class kgToPaneController {
 
                 Stage stage = (Stage) backButton.getScene ().getWindow ();
 
-                Stage massStage = new Stage ();
 
-                VBox mainPane = null;
                 try {
-                    mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/massPane.fxml"));
+                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/massPane.fxml"));
                     Scene scene = new Scene (mainPane);
 
                     stage.setScene (scene);

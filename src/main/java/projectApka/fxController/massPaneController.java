@@ -26,18 +26,15 @@ public class massPaneController {
     private Button backButton;
 
 
-    public void initialize () {
+    public void initialize() {
         kgButton.setOnAction (new EventHandler<ActionEvent> () {
             @Override
             public void handle(ActionEvent actionEvent) {
 
                 Stage stage = (Stage) kgButton.getScene ().getWindow ();
 
-                Stage massStage = new Stage ();
-
-                VBox mainPane = null;
                 try {
-                    mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/kgToPane.fxml"));
+                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/kgToPane.fxml"));
                     Scene scene = new Scene (mainPane);
 
                     stage.setScene (scene);
@@ -52,21 +49,7 @@ public class massPaneController {
             }
         });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+///////////////////////////////////////////////////////////////////////////////////
 
         backButton.setOnAction (new EventHandler<ActionEvent> () {
             @Override
@@ -79,7 +62,7 @@ public class massPaneController {
                 VBox mainPane = null;
                 try {
                     mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/mainPane.fxml"));
-                Scene scene = new Scene (mainPane);
+                    Scene scene = new Scene (mainPane);
 
                     stage.setScene (scene);
                     stage.setTitle ("Konwerter");
