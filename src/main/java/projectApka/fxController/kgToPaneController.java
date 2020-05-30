@@ -36,7 +36,7 @@ public class kgToPaneController {
                     Scene scene = new Scene (mainPane);
 
                     stage.setScene (scene);
-                    stage.setTitle ("Konwerter");
+                    stage.setTitle ("KgToUcja");
                     stage.show ();
                     stage.setAlwaysOnTop (true);
                     stage.setResizable (true);
@@ -60,7 +60,7 @@ public class kgToPaneController {
                     Scene scene = new Scene (mainPane);
 
                     stage.setScene (scene);
-                    stage.setTitle ("Konwerter");
+                    stage.setTitle ("KgtoPounds");
                     stage.show ();
                     stage.setAlwaysOnTop (true);
                     stage.setResizable (true);
@@ -85,7 +85,7 @@ public class kgToPaneController {
                     Scene scene = new Scene (mainPane);
 
                     stage.setScene (scene);
-                    stage.setTitle ("Konwerter");
+                    stage.setTitle ("Wybór-Massy");
                     stage.show ();
                     stage.setAlwaysOnTop (true);
                     stage.setResizable (true);

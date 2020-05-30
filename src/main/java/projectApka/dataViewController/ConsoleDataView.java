@@ -1,13 +1,9 @@
 package dataViewController;
 
-<<<<<<< HEAD:src/ProjectApka/viewController/ConsoleDataView.java
-import ProjectApka.Mass;
-import ProjectApka.Metrics;
-import ProjectApka.Temperature;
-=======
 import data.Mass;
 import data.Metrics;
->>>>>>> favael:src/main/java/projectApka/dataViewController/ConsoleDataView.java
+import data.Temperature;
+
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -68,11 +64,7 @@ public class ConsoleDataView implements Runnable {
                         metrics.wyborMetrics ();
                         break;
                     case 3:
-<<<<<<< HEAD:src/ProjectApka/viewController/ConsoleDataView.java
                         temp.wyborTemp();
-=======
-                        System.out.println ("TEMPERATURE");
->>>>>>> favael:src/main/java/projectApka/dataViewController/ConsoleDataView.java
                         break;
                     case 4:
                         isFinished = true;

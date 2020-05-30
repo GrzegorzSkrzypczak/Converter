@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class giveNumberPaneKgToUncjaController {
+public class giveNumberKgToPoundsController {
 
     @FXML
 
@@ -27,7 +27,6 @@ public class giveNumberPaneKgToUncjaController {
 
     Mass mass = new Mass ();
 
-
     public void initialize() throws Exception {
 
         convertButton.setOnAction (new EventHandler<ActionEvent> () {
@@ -36,7 +35,7 @@ public class giveNumberPaneKgToUncjaController {
             public void handle(ActionEvent actionEvent) {
 
                 double value = Double.parseDouble (textAreaButton.getText ());
-                String stringValue = String.valueOf (mass.kilogramToUncja (value));
+                String stringValue = String.valueOf (mass.kilogramToPunds (value));
                 textAreaButton.setText (stringValue);
 
             }
@@ -50,22 +49,19 @@ public class giveNumberPaneKgToUncjaController {
 
                 Stage stage = (Stage) backButton.getScene ().getWindow ();
 
-                Stage massStage = new Stage ();
-
 
                 try {
                     VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/kgToPane.fxml"));
                     Scene scene = new Scene (mainPane);
 
                     stage.setScene (scene);
-                    stage.setTitle ("Konwerter");
+                    stage.setTitle ("Kg-Wybor");
                     stage.show ();
                     stage.setAlwaysOnTop (true);
                     stage.setResizable (true);
                 } catch (IOException e) {
                     e.printStackTrace ();
                 }
-
             }
         });
     }

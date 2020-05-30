@@ -34,7 +34,7 @@ public class mainPaneController {
                 Scene scene = new Scene (mainPane);
 
                 stage.setScene (scene);
-                stage.setTitle ("Konwerter");
+                stage.setTitle ("Wybór-Massy");
                 stage.show ();
                 stage.setAlwaysOnTop (true);
                 stage.setResizable (true);

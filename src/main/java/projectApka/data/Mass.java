@@ -19,22 +19,22 @@ public class Mass {
         return kilograms * 35.274;
     }
 
-    void poundsToKilograms(double pounds) {
+    public double poundsToKilograms(double pounds) {
         this.pounds = pounds;
-        System.out.format("%.2f%n", pounds * 0.45359237);
+        return pounds * 0.45359237;
     }
 
-    void poundsToUncja(double pounds) {
+    public double poundsToUncja(double pounds) {
         this.pounds = pounds;
-        System.out.format("%.2f%n", pounds * 16);
+        return pounds * 16;
     }
 
-    void uncjaToKilograms(double uncja) {
+    public void uncjaToKilograms(double uncja) {
         this.uncja = uncja;
         System.out.format("%.2f%n", uncja / 35.274);
     }
 
-    void uncjaToPonds(double uncja) {
+    public void uncjaToPonds(double uncja) {
         this.uncja = uncja;
         System.out.format("%.2f%n", uncja * 0.062500);
     }

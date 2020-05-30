@@ -27,23 +27,44 @@ public class massPaneController {
 
 
     public void initialize() {
-        kgButton.setOnAction (new EventHandler<ActionEvent> () {
+        poundsButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                Stage stage = (Stage)poundsButton.getScene().getWindow();
+                try {
+                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/poundToPane.fxml"));
+                    Scene scene = new Scene(mainPane);
+                    stage.setScene(scene);
+                    stage.setTitle("Funt-Wybór");
+                    stage.show();
+                    stage.setAlwaysOnTop(true);
+                    stage.setResizable(true);
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        });
+
+
+        kgButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
 
-                Stage stage = (Stage) kgButton.getScene ().getWindow ();
+                Stage stage = (Stage) kgButton.getScene().getWindow();
 
                 try {
-                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/kgToPane.fxml"));
-                    Scene scene = new Scene (mainPane);
+                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/kgToPane.fxml"));
+                    Scene scene = new Scene(mainPane);
 
-                    stage.setScene (scene);
-                    stage.setTitle ("Konwerter");
-                    stage.show ();
-                    stage.setAlwaysOnTop (true);
-                    stage.setResizable (true);
+                    stage.setScene(scene);
+                    stage.setTitle("Kg-Wybór");
+                    stage.show();
+                    stage.setAlwaysOnTop(true);
+                    stage.setResizable(true);
                 } catch (IOException e) {
-                    e.printStackTrace ();
+                    e.printStackTrace();
                 }
 
             }
@@ -51,26 +72,26 @@ public class massPaneController {
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-        backButton.setOnAction (new EventHandler<ActionEvent> () {
+        backButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
 
-                Stage stage = (Stage) backButton.getScene ().getWindow ();
+                Stage stage = (Stage) backButton.getScene().getWindow();
 
-                Stage massStage = new Stage ();
+                Stage massStage = new Stage();
 
                 VBox mainPane = null;
                 try {
-                    mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/mainPane.fxml"));
-                    Scene scene = new Scene (mainPane);
+                    mainPane = FXMLLoader.load(getClass().getResource("/fxml/mainPane.fxml"));
+                    Scene scene = new Scene(mainPane);
 
-                    stage.setScene (scene);
-                    stage.setTitle ("Konwerter");
-                    stage.show ();
-                    stage.setAlwaysOnTop (true);
-                    stage.setResizable (true);
+                    stage.setScene(scene);
+                    stage.setTitle("Wybór-Opcji");
+                    stage.show();
+                    stage.setAlwaysOnTop(true);
+                    stage.setResizable(true);
                 } catch (IOException e) {
-                    e.printStackTrace ();
+                    e.printStackTrace();
                 }
 
             }
