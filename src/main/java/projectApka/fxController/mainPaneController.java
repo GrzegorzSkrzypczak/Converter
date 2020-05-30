@@ -30,7 +30,7 @@ public class mainPaneController {
                 Stage stage = (Stage) exitButton.getScene ().getWindow ();
 
                 try {
-                VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/massPane.fxml"));
+                VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/Mass/massPane.fxml"));
                 Scene scene = new Scene (mainPane);
 
                 stage.setScene (scene);
