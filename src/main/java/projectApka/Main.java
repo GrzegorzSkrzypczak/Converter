@@ -1,11 +1,9 @@
-package ProjectApka;
 
-
-import ProjectApka.viewController.ConsoleDataView;
+import dataViewController.JavaFXViewController;
 
 public class Main {
     public static void main(String[] args) {
-        ConsoleDataView consoleDataView = new ConsoleDataView();
-        consoleDataView.run ();
+        JavaFXViewController okienko = new JavaFXViewController ();
+        okienko.run ();
     }
 }
