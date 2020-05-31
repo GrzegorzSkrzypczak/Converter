@@ -29,14 +29,16 @@ public class Mass {
         return pounds * 16;
     }
 
-    public void uncjaToKilograms(double uncja) {
+    public double uncjaToKilograms(double uncja) {
         this.uncja = uncja;
-        System.out.format("%.2f%n", uncja / 35.274);
+        return uncja / 35.274;
+
     }
 
-    public void uncjaToPonds(double uncja) {
+    public double uncjaToPonds(double uncja) {
         this.uncja = uncja;
-        System.out.format("%.2f%n", uncja * 0.062500);
+        return uncja * 0.062500;
+
     }
 
     public void wyborMasy() {

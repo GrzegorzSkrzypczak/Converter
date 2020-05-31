@@ -27,17 +27,17 @@ public class mainPaneController {
         massButton.setOnAction (new EventHandler<ActionEvent> () {
             @Override
             public void handle(ActionEvent actionEvent) {
-                Stage stage = (Stage) exitButton.getScene ().getWindow ();
+                Stage stage = (Stage) massButton.getScene ().getWindow ();
 
                 try {
-                VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/Mass/massPane.fxml"));
-                Scene scene = new Scene (mainPane);
+                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/Mass/massPane.fxml"));
+                    Scene scene = new Scene (mainPane);
 
-                stage.setScene (scene);
-                stage.setTitle ("Wybór-Massy");
-                stage.show ();
-                stage.setAlwaysOnTop (true);
-                stage.setResizable (true);
+                    stage.setScene (scene);
+                    stage.setTitle ("Wybór-Massy");
+                    stage.show ();
+                    stage.setAlwaysOnTop (true);
+                    stage.setResizable (true);
 
                 } catch (IOException ioException) {
                     ioException.printStackTrace ();
