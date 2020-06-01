@@ -20,9 +20,33 @@ public class mainPaneController {
     private Button metricButton;
 
     @FXML
+    private Button tempButton;
+
+    @FXML
     private Button exitButton;
 
     public void initialize () throws Exception {
+
+        metricButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                Stage stage = (Stage)metricButton.getScene().getWindow();
+
+                try {
+                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/Metrics/metricsPane.fxml"));
+
+                    Scene scene = new Scene(mainPane);
+                    stage.setScene(scene);
+                    stage.setTitle("Wybór Odległości");
+                    stage.show();
+                    stage.setAlwaysOnTop(true);
+                    stage.setResizable(true);
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
         massButton.setOnAction (new EventHandler<ActionEvent> () {
             @Override

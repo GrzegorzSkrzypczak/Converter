@@ -85,7 +85,7 @@ public class kgToPaneController {
                     Scene scene = new Scene (mainPane);
 
                     stage.setScene (scene);
-                    stage.setTitle ("Wybór-Massy");
+                    stage.setTitle ("Wybór-Opcji");
                     stage.show ();
                     stage.setAlwaysOnTop (true);
                     stage.setResizable (true);
