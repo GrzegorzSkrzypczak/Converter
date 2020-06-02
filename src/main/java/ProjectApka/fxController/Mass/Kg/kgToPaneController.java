@@ -81,11 +81,11 @@ public class kgToPaneController {
 
 
                 try {
-                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/Mass/massPane.fxml"));
+                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/mainPane.fxml"));
                     Scene scene = new Scene (mainPane);
 
                     stage.setScene (scene);
-                    stage.setTitle ("Wybór-Massy");
+                    stage.setTitle ("Wybór-Opcji");
                     stage.show ();
                     stage.setAlwaysOnTop (true);
                     stage.setResizable (true);

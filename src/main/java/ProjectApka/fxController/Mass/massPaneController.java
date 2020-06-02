@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 import java.io.IOException;
 
@@ -27,6 +28,28 @@ public class massPaneController {
 
 
     public void initialize() {
+
+        uncjeButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                Stage stage = (Stage)uncjeButton.getScene().getWindow();
+
+                try {
+                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/Mass/Uncja/uncjaToPane.fxml"));
+                    Scene scene = new Scene(mainPane);
+
+                    stage.setScene(scene);
+                    stage.setTitle("Uncja-Wybór");
+                    stage.show();
+                    stage.setResizable(true);
+                    stage.setAlwaysOnTop(true);
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
         poundsButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -98,3 +121,4 @@ public class massPaneController {
         });
     }
 }
+

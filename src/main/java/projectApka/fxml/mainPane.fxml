@@ -7,6 +7,7 @@
    <children>
       <Button fx:id="massButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="80.0" prefWidth="300.0" text="Waga" VBox.vgrow="ALWAYS" />
       <Button fx:id="metricButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="80.0" prefWidth="300.0" text="Odległości" VBox.vgrow="ALWAYS" />
+      <Button fx:id="tempButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="80.0" prefWidth="300.0" text="Temperatura" />
       <Button fx:id="exitButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="80.0" prefWidth="300.0" text="Exit" VBox.vgrow="ALWAYS" />
    </children>
 </VBox>
