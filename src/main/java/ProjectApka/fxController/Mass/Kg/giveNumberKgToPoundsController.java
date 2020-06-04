@@ -33,12 +33,15 @@ public class giveNumberKgToPoundsController {
 
             @Override
             public void handle(ActionEvent actionEvent) {
-
-                double value = Double.parseDouble (textAreaButton.getText ());
-                String stringValue = String.valueOf (mass.kilogramToPunds (value));
-                textAreaButton.setText (stringValue);
-
+                try {
+                    double value = Double.parseDouble(textAreaButton.getText());
+                    String stringValue = String.valueOf(mass.kilogramToPunds(value));
+                    textAreaButton.setText(stringValue);
+                } catch (IllegalArgumentException e) {
+                    textAreaButton.setText("Podaj liczbę!!");
+                }
             }
+
         });
 
 ///////////////////////////////////////////////////////////////////////////////////

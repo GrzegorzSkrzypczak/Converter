@@ -61,7 +61,7 @@ public class metricsPaneController {
 
 
                 try {
-                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/feetToPane.fxml"));
+                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/mainPane.fxml"));
                     Scene scene = new Scene(mainPane);
 
                     stage.setScene(scene);
