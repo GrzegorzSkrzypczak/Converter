@@ -1,4 +1,6 @@
-import dataViewController.JavaFXViewController;
+package projectApka;
+
+import projectApka.dataViewController.JavaFXViewController;
 
 public class Main {
     public static void main(String[] args) {

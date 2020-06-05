@@ -1,4 +1,4 @@
-package dataViewController;
+package projectApka.dataViewController;
 
 public class SwingViewController {
 }

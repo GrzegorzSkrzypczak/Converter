@@ -1,4 +1,4 @@
-package fxController;
+package projectApka.fxController;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -9,7 +9,9 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 
 public class mainPaneController {
 
@@ -33,7 +35,9 @@ public class mainPaneController {
                 Stage stage = (Stage)metricButton.getScene().getWindow();
 
                 try {
-                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/Metrics/metricsPane.fxml"));
+                    URL url = new File ("src/main/java/projectApka/fxml/Metrics/metricsPane.fxml").toURI ().toURL ();
+                    VBox mainPane = FXMLLoader.load (url);
+                   // VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/Metrics/metricsPane.fxml"));
 
                     Scene scene = new Scene(mainPane);
                     stage.setScene(scene);
@@ -54,11 +58,13 @@ public class mainPaneController {
                 Stage stage = (Stage) massButton.getScene ().getWindow ();
 
                 try {
-                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/Mass/massPane.fxml"));
+                    URL url = new File ("src/main/java/projectApka/fxml/Mass/massPane.fxml").toURI ().toURL ();
+                    VBox mainPane = FXMLLoader.load (url);
+//                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/Mass/massPane.fxml"));
                     Scene scene = new Scene (mainPane);
 
                     stage.setScene (scene);
-                    stage.setTitle ("Wybór-Massy");
+                    stage.setTitle ("Wybór-masy");
                     stage.show ();
                     stage.setAlwaysOnTop (true);
                     stage.setResizable (true);
