@@ -1,5 +1,6 @@
-package projectApka.fxController.Mass.Uncje;
+package fxController.Mass.Uncje;
 
+import data.Mass;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -9,7 +10,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import projectApka.data.Mass;
 
 import java.io.IOException;
 
@@ -31,13 +31,16 @@ public class giveNumberUncjatoPoundsController {
         convertButton.setOnAction (new EventHandler<ActionEvent> () {
             @Override
             public void handle(ActionEvent actionEvent) {
-                String textOkno = textAreaButton.getText ();
-                double textZOkna = Double.parseDouble (textOkno);
-                double result = mass.uncjaToPonds (textZOkna);
-                String rezultZOkna = String.valueOf (result);
-                textAreaButton.setText (rezultZOkna);
-                //TODO napisać to w jednej linijce
+                try {
+                    double value = Double.parseDouble(textAreaButton.getText());
+                    String stringValue = String.valueOf(mass.uncjaToPonds (value));
+                    textAreaButton.setText(stringValue);
+                } catch (IllegalArgumentException e) {
+                    // focus,
+                    textAreaButton.setText("Podaj liczbę!!");
+                }
             }
+
         });
 
         backButton.setOnAction (new EventHandler<ActionEvent> () {

@@ -1,6 +1,7 @@
-package projectApka.fxController.Mass.Kg;
+package fxController.Mass.Kg;
 
 
+import data.Mass;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -10,7 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import projectApka.data.Mass;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -41,6 +42,7 @@ public class giveNumberKgToPoundsController {
                     String stringValue = String.valueOf(mass.kilogramToPunds(value));
                     textAreaButton.setText(stringValue);
                 } catch (IllegalArgumentException e) {
+                    // focus,
                     textAreaButton.setText("Podaj liczbę!!");
                 }
             }

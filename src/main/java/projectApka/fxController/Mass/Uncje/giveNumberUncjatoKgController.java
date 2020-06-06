@@ -1,6 +1,7 @@
-package projectApka.fxController.Mass.Uncje;
+package fxController.Mass.Uncje;
 
 
+import data.Mass;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -10,9 +11,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import projectApka.data.Mass;
 
+
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 
 public class giveNumberUncjatoKgController {
 
@@ -32,15 +35,16 @@ public class giveNumberUncjatoKgController {
         convertButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                String textOkno = textAreaButton.getText();
-                double doublezTextOkno = Double.parseDouble(textOkno);
-                double result = mass.uncjaToKilograms(doublezTextOkno);
-                String stringzResult = String.valueOf(result);
-                textAreaButton.setText(stringzResult);
-//                textAreaButton.setText(String.valueOf(mass.poundsToKilograms(Double.parseDouble(textAreaButton.getText()))));
-                // TODO Skrócony zapis // ucz sie
-
+                try {
+                    double value = Double.parseDouble(textAreaButton.getText());
+                    String stringValue = String.valueOf(mass.uncjaToKilograms (value));
+                    textAreaButton.setText(stringValue);
+                } catch (IllegalArgumentException e) {
+                    // focus,
+                    textAreaButton.setText("Podaj liczbę!!");
+                }
             }
+
         });
 
         backButton.setOnAction(new EventHandler<ActionEvent>() {
@@ -49,7 +53,9 @@ public class giveNumberUncjatoKgController {
                 Stage stage = (Stage) backButton.getScene().getWindow();
 
                 try {
-                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/Mass/Uncja/uncjaToPane.fxml"));
+                    URL url = new File ("src/main/java/projectApka/fxml/Mass/Uncja/uncjaToPane.fxml").toURI ().toURL ();
+                    VBox mainPane = FXMLLoader.load (url);
+//                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/Mass/Uncja/uncjaToPane.fxml"));
                     Scene scene = new Scene(mainPane);
                     stage.setScene(scene);
                     stage.setTitle("Uncje-Wybór");

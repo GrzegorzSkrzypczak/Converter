@@ -1,4 +1,4 @@
-package projectApka.dataViewController;
+package dataViewController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,14 +10,14 @@ import java.net.URL;
 
 public class JavaFXViewController extends Application implements Runnable {
 
-    
+
 
     @Override
     public void start(Stage stage) throws Exception {
 
         URL url = new File ("src/main/java/projectApka/fxml/mainPane.fxml").toURI ().toURL ();
         VBox mainPane = FXMLLoader.load (url);
-Scene scene = new Scene (mainPane);
+        Scene scene = new Scene (mainPane);
         stage.setScene (scene);
         stage.setTitle ("Start / Wybór opcji");
         stage.show ();

@@ -1,6 +1,7 @@
-package projectApka.fxController.Metrics.Feet;
+package fxController.Metrics.Feet;
 
 
+import data.Metrics;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -10,7 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import projectApka.data.Metrics;
+
 
 import java.io.File;
 import java.io.IOException;

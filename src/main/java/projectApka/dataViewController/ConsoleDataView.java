@@ -1,8 +1,10 @@
-package projectApka.dataViewController;
+package dataViewController;
 
-import projectApka.data.Mass;
-import projectApka.data.Metrics;
-import projectApka.data.Temperature;
+
+
+import data.Mass;
+import data.Metrics;
+import data.Temperature;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

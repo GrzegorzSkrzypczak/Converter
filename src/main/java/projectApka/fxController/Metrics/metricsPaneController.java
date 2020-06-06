@@ -1,4 +1,4 @@
-package projectApka.fxController.Metrics;
+package fxController.Metrics;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;

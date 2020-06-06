@@ -1,4 +1,4 @@
-package projectApka.fxController.Mass.Uncje;
+package fxController.Mass.Uncje;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -34,7 +34,9 @@ public class uncjaToPaneController {
                 Stage stage = (Stage)toKgButton.getScene().getWindow();
 
                 try {
-                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/Mass/Uncja/giveNumberUncjaToKgPane.fxml"));
+                    URL url = new File ("src/main/java/projectApka/fxml/Mass/Uncja/giveNumberUncjaToKgPane.fxml").toURI ().toURL ();
+                    VBox mainPane = FXMLLoader.load (url);
+//                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/Mass/Uncja/giveNumberUncjaToKgPane.fxml"));
                     Scene scene = new Scene(mainPane);
 
                     stage.setScene (scene);
@@ -54,7 +56,9 @@ public class uncjaToPaneController {
                 Stage stage = (Stage)toPoundButton.getScene().getWindow();
 
                 try {
-                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/Mass/Uncja/giveNumberUncjaToPoundsPane.fxml"));
+                    URL url = new File ("src/main/java/projectApka/fxml/Mass/Uncja/giveNumberUncjaToPoundsPane.fxml").toURI ().toURL ();
+                    VBox mainPane = FXMLLoader.load (url);
+//                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/Mass/Uncja/giveNumberUncjaToPoundsPane.fxml"));
                     Scene scena = new Scene(mainPane);
 
                     stage.setScene(scena);
@@ -77,6 +81,7 @@ public class uncjaToPaneController {
                 Stage stage = (Stage)backButton.getScene().getWindow();
 
                 try {
+
                     URL url = new File ("src/main/java/projectApka/fxml/Mass/massPane.fxml").toURI ().toURL ();
                     VBox mainPane = FXMLLoader.load (url);
 //                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/mainPane.fxml"));

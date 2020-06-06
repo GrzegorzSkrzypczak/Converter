@@ -1,4 +1,4 @@
-package projectApka.fxController;
+package fxController;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;

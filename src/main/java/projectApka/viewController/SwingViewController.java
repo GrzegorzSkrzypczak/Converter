@@ -1,4 +1,4 @@
-package projectApka.viewController;
+package viewController;
 
 public class SwingViewController {
 }
