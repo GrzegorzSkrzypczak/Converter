@@ -33,7 +33,7 @@ public class mainPaneController {
                 Stage stage = (Stage)metricButton.getScene().getWindow();
 
                 try {
-                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/Metrics/metricsPane.fxml"));
+                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/metrics/metricsPane.fxml"));
 
                     Scene scene = new Scene(mainPane);
                     stage.setScene(scene);
@@ -54,7 +54,7 @@ public class mainPaneController {
                 Stage stage = (Stage) massButton.getScene ().getWindow ();
 
                 try {
-                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/Mass/massPane.fxml"));
+                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/mass/massPane.fxml"));
                     Scene scene = new Scene (mainPane);
 
                     stage.setScene (scene);
