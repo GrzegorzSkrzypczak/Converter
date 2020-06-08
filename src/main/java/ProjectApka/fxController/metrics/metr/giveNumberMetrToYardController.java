@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class giveNumberMetrToYaardController {
+public class giveNumberMetrToYardController {
 
     @FXML
     private TextField textButton;

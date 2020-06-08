@@ -1,4 +1,4 @@
-package fxController.metrics.metr;
+package fxController.metrics.yard;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -11,13 +11,13 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class metrToPaneController {
+public class yardToPaneController {
 
     @FXML
     private Button feetButton;
 
     @FXML
-    private Button yardButton;
+    private Button metrButton;
 
     @FXML
     private Button landMileButton;
@@ -37,11 +37,11 @@ public class metrToPaneController {
 
                 Stage stage = (Stage) feetButton.getScene().getWindow();
                 try {
-                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/metrics/metr/giveNumberMetrToFeetPane.fxml"));
+                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/metrics/yard/giveNumberYardToFeetPane.fxml"));
                     Scene scene = new Scene(mainPane);
 
                     stage.setScene(scene);
-                    stage.setTitle("Metr na feet");
+                    stage.setTitle("Yard na feet");
                     stage.show();
                     stage.setResizable(true);
                     stage.setAlwaysOnTop(true);
@@ -54,16 +54,16 @@ public class metrToPaneController {
             }
         });
 
-        yardButton.setOnAction(new EventHandler<ActionEvent>() {
+        metrButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                Stage stage = (Stage) yardButton.getScene().getWindow();
+                Stage stage = (Stage) metrButton.getScene().getWindow();
                 try {
-                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/metrics/metr/giveNumberMetrToYardPane.fxml"));
+                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/metrics/yard/giveNumberYardToMetrPane.fxml"));
                     Scene scene = new Scene(mainPane);
 
                     stage.setScene(scene);
-                    stage.setTitle("Metr na Yard");
+                    stage.setTitle("Yard na Metr");
                     stage.show();
                     stage.setResizable(true);
                     stage.setAlwaysOnTop(true);
@@ -81,11 +81,11 @@ public class metrToPaneController {
             public void handle(ActionEvent actionEvent) {
                 Stage stage = (Stage) landMileButton.getScene().getWindow();
                 try {
-                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/metrics/metr/giveNumberMetrToLandMilePane.fxml"));
+                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/metrics/yard/giveNumberYardToLandMilePane.fxml"));
                     Scene scene = new Scene(mainPane);
 
                     stage.setScene(scene);
-                    stage.setTitle("Metr na landMile");
+                    stage.setTitle("Yard na landMile");
                     stage.show();
                     stage.setResizable(true);
                     stage.setAlwaysOnTop(true);
@@ -103,11 +103,11 @@ public class metrToPaneController {
             public void handle(ActionEvent actionEvent) {
                 Stage stage = (Stage) seaMileButton.getScene().getWindow();
                 try {
-                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/metrics/metr/giveNumberMetrToSeaMilePane.fxml"));
+                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/metrics/yard/giveNumberYardToSeaMilePane.fxml"));
                     Scene scene = new Scene(mainPane);
 
                     stage.setScene(scene);
-                    stage.setTitle("Metr na seaMile");
+                    stage.setTitle("Yard na seaMile");
                     stage.show();
                     stage.setResizable(true);
                     stage.setAlwaysOnTop(true);

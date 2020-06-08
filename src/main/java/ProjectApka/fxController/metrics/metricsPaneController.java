@@ -61,6 +61,27 @@ public class metricsPaneController {
 
                 try {
                     VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/metrics/metr/metrToPane.fxml"));
+                    Scene scene = new Scene(mainPane);
+
+                    stage.setScene(scene);
+                    stage.setTitle("Metry na:");
+                    stage.show();
+                    stage.setAlwaysOnTop(true);
+                    stage.setResizable(true);
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        yardButon.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                Stage stage = (Stage)yardButon.getScene().getWindow();
+
+                try {
+                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/metrics/yard/yardToPane.fxml"));
 
                     Scene scene = new Scene(mainPane);
                     stage.setScene(scene);
