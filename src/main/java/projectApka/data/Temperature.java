@@ -8,36 +8,36 @@ public class Temperature {
     double fahrenheit;
 
 
-    void celsiusToKelwin(double celsius) {
+    public double celsiusToKelwin(double celsius) {
         this.celsius = celsius;
-        System.out.format("%.2f%n", celsius + 273.15);
+        return celsius + 273.15;
 
     }
 
-    void celsiusToFahrenheit(double celsius) {
+    public double celsiusToFahrenheit(double celsius) {
         this.celsius = celsius;
-        System.out.format("%.2f%n", (celsius * 1.8) + 32);
+        return (celsius * 1.8) + 32;
 
     }
 
-    void kelwinToCelsius(double kelwin) {
+    public double kelwinToCelsius(double kelwin) {
         this.kelwin = kelwin;
-        System.out.format("%.2f%n", kelwin - 273.15);
+        return kelwin - 273.15;
     }
 
-    void kelwinToFahrenheit(double kelwin) {
+    public double kelwinToFahrenheit(double kelwin) {
         this.kelwin = kelwin;
-        System.out.format("%.2f%n", (kelwin - 273.15) * 1.8 + 32);
+        return (kelwin - 273.15) * 1.8 + 32;
     }
 
-    void fahrenheitToCelsius(double fahrenheit) {
+    public double fahrenheitToCelsius(double fahrenheit) {
         this.fahrenheit = fahrenheit;
-        System.out.format("%.2f%n", (fahrenheit - 32) / 1.8);
+        return (fahrenheit - 32) / 1.8;
     }
 
-    void  fahrenheitToKelwin(double fahrenheit) {
+    public double  fahrenheitToKelwin(double fahrenheit) {
         this.fahrenheit = fahrenheit;
-        System.out.format("%.2f%n", (fahrenheit - 32) / 1.8 + 273.15);
+        return (fahrenheit - 32) / 1.8 + 273.15;
 
     }
     public void wyborTemp() {
