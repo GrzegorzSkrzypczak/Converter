@@ -1,4 +1,4 @@
-package data;
+package ProjectApka.data;
 
 import java.util.Scanner;
 

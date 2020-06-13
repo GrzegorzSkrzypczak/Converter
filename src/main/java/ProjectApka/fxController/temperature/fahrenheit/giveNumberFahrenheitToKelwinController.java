@@ -1,7 +1,6 @@
-package fxController.temperature.fahrenheit;
+package ProjectApka.fxController.temperature.fahrenheit;
 
-import data.Mass;
-import data.Temperature;
+import ProjectApka.data.Temperature;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;

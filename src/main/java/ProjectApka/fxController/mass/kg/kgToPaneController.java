@@ -1,4 +1,4 @@
-package fxController.mass.kg;
+package ProjectApka.fxController.mass.kg;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;

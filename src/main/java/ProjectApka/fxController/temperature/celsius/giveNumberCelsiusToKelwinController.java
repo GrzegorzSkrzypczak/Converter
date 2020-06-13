@@ -1,6 +1,6 @@
-package fxController.temperature.celsius;
+package ProjectApka.fxController.temperature.celsius;
 
-import data.Temperature;
+import ProjectApka.data.Temperature;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
