@@ -1,6 +1,6 @@
-package fxController.metrics.metr;
+package ProjectApka.fxController.metrics.metr;
 
-import data.Metrics;
+import ProjectApka.data.Metrics;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;

@@ -1,4 +1,4 @@
-package dataViewController;
+package ProjectApka.dataViewController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

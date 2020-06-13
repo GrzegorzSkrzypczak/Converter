@@ -1,6 +1,6 @@
-package fxController.mass.uncje;
+package ProjectApka.fxController.mass.uncje;
 
-import data.Mass;
+import ProjectApka.data.Mass;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;

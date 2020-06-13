@@ -1,7 +1,6 @@
-package fxController.temperature.kelwin;
+package ProjectApka.fxController.temperature.kelwin;
 
-import data.Mass;
-import data.Temperature;
+import ProjectApka.data.Temperature;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
