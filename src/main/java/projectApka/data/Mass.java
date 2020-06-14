@@ -2,7 +2,7 @@ package ProjectApka.data;
 
 import java.util.Scanner;
 
-public class Mass {
+public class Mass implements MassConverter {
 
     double kg;
     double pounds;

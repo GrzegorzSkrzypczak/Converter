@@ -2,7 +2,7 @@ package ProjectApka.data;
 
 import java.util.Scanner;
 
-public class Temperature {
+public class Temperature implements TemperatureConverter {
     double celsius;
     double kelwin;
     double fahrenheit;

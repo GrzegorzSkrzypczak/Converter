@@ -1,36 +1,21 @@
 package ProjectApka.fxController.mass.kg;
 
 
-import ProjectApka.data.Mass;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class giveNumberKgToPoundsController {
+public class giveNumberKgToPoundsController extends GiveToKG {
 
-    @FXML
-
-    private TextArea textAreaButton;
-
-    @FXML
-    private Button convertButton;
-
-    @FXML
-    private Button backButton;
-
-    Mass mass = new Mass ();
 
     public void initialize() throws Exception {
 
-        convertButton.setOnAction (new EventHandler<ActionEvent> () {
+        convertButton.setOnAction(new EventHandler<ActionEvent>() {
 
             @Override
             public void handle(ActionEvent actionEvent) {
@@ -47,24 +32,24 @@ public class giveNumberKgToPoundsController {
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-        backButton.setOnAction (new EventHandler<ActionEvent> () {
+        backButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
 
-                Stage stage = (Stage) backButton.getScene ().getWindow ();
+                Stage stage = (Stage) backButton.getScene().getWindow();
 
 
                 try {
-                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/mass/Kg/kgToPane.fxml"));
-                    Scene scene = new Scene (mainPane);
+                    VBox mainPane = FXMLLoader.load(getClass().getResource("/fxml/mass/Kg/kgToPane.fxml"));
+                    Scene scene = new Scene(mainPane);
 
-                    stage.setScene (scene);
-                    stage.setTitle ("Kg-Wybor");
-                    stage.show ();
-                    stage.setAlwaysOnTop (true);
-                    stage.setResizable (true);
+                    stage.setScene(scene);
+                    stage.setTitle("Kg-Wybor");
+                    stage.show();
+                    stage.setAlwaysOnTop(true);
+                    stage.setResizable(true);
                 } catch (IOException e) {
-                    e.printStackTrace ();
+                    e.printStackTrace();
                 }
             }
         });

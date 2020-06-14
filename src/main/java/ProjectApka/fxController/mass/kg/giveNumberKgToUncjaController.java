@@ -1,33 +1,16 @@
 package ProjectApka.fxController.mass.kg;
 
 
-import ProjectApka.data.Mass;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class giveNumberKgToUncjaController {
-
-    @FXML
-
-    private TextArea textAreaButton;
-
-    @FXML
-    private Button convertButton;
-
-    @FXML
-    private Button backButton;
-
-    Mass mass = new Mass ();
-
+public class giveNumberKgToUncjaController extends GiveToKG {
 
     public void initialize() throws Exception {
 

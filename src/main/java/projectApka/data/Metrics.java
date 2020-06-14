@@ -2,7 +2,7 @@ package ProjectApka.data;
 
 import java.util.Scanner;
 
-public class Metrics {
+public class Metrics implements MetricsConverter {
     double feet;
     double metr;
     double yard;
