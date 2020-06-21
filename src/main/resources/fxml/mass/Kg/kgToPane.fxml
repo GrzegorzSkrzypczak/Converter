@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectApka.fxController.mass.kg.kgToPaneController">
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectApka.fxController.mass.kg.KgToPaneController">
    <children>
       <Button fx:id="toPoundsButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="80.0" prefWidth="300.0" text="na Funty" VBox.vgrow="ALWAYS" />
       <Button fx:id="toUncjaButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="80.0" prefWidth="300.0" text="na Uncje" VBox.vgrow="ALWAYS" />

@@ -11,7 +11,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class kgToPaneController {
+public class KgToPaneController {
+    private static final String BACK_LAYOUT = "/fxml/mass/Kg/kgToPane.fxml";
+    private static final String CONVERTER_LAYOUT = "/fxml/mass/Kg/convert_layout.fxml";
 
     @FXML
     private Button toPoundsButton;
@@ -32,11 +34,16 @@ public class kgToPaneController {
                 Stage stage = (Stage) toUncjaButton.getScene ().getWindow ();
 
                 try {
-                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/mass/Kg/giveNumberKgToUncjaPane.fxml"));
-                    Scene scene = new Scene (mainPane);
+                    ConvertController controller =
+                            new ConvertController(new KgToUncjeController(), BACK_LAYOUT);
+
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource(CONVERTER_LAYOUT));
+                    loader.setController(controller);
+
+                    Scene scene = new Scene (loader.load());
 
                     stage.setScene (scene);
-                    stage.setTitle ("KgToUcja");
+                    stage.setTitle ("Kilogramy na uncje:");
                     stage.show ();
                     stage.setAlwaysOnTop (true);
                     stage.setResizable (true);
@@ -56,11 +63,16 @@ public class kgToPaneController {
                 Stage stage = (Stage) toPoundsButton.getScene ().getWindow ();
 
                 try {
-                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/mass/Kg/giveNumberKgToPundsPane.fxml"));
-                    Scene scene = new Scene (mainPane);
+                    ConvertController controller =
+                            new ConvertController(new KgToPoundsController(), BACK_LAYOUT);
+
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource(CONVERTER_LAYOUT));
+                    loader.setController(controller);
+
+                    Scene scene = new Scene (loader.load());
 
                     stage.setScene (scene);
-                    stage.setTitle ("KgtoPounds");
+                    stage.setTitle ("Kilogramy na funty:");
                     stage.show ();
                     stage.setAlwaysOnTop (true);
                     stage.setResizable (true);
@@ -81,11 +93,12 @@ public class kgToPaneController {
 
 
                 try {
-                    VBox mainPane = FXMLLoader.load (getClass ().getResource ("/fxml/mainPane.fxml"));
+                    VBox mainPane = FXMLLoader.load
+                            (getClass ().getResource ("/fxml/mainPane.fxml"));
                     Scene scene = new Scene (mainPane);
 
                     stage.setScene (scene);
-                    stage.setTitle ("Wybór-Opcji");
+                    stage.setTitle ("Wybór opcji:");
                     stage.show ();
                     stage.setAlwaysOnTop (true);
                     stage.setResizable (true);
