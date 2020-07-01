@@ -30,7 +30,7 @@ public class ConvertController {
         this.convertLayout = convertLayout;
     }
 
-    public void goBack(MouseEvent event) {
+    public void goBAck(MouseEvent event) {
         Stage stage = (Stage) backButton.getScene().getWindow();
 
         try {
